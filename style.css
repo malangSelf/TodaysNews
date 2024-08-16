@@ -43,5 +43,63 @@ nav a {
     margin-left: 20px;
     cursor: pointer;
     border: none;
-    font-stretch: 18px;
+    font-size: 18px;
+}
+
+/* global-width */
+.object-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.card-block {
+    width: 280px;
+    padding: 1rem;
+    margin: 10px;
+    border: 2px solid green;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.card-block img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.card-block:hover {
+    box-shadow: 4px 4px 10px rgb(0, 0, 0 , 0.1);
+}
+
+.card-block h2 {
+    color: #333;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.card-block p {
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+
+
+@media(max-width: 500px) {
+    nav {
+        padding: 0 20px;
+    }
+    .search input {
+        width: 150px;
+        padding: 10px 10px;
+    }
+    .bar-tag a {
+        font-size: 1.8rem;
+    }
+    .card-block {
+        width: 100%;
+    }
 }
