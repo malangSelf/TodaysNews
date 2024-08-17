@@ -52,7 +52,7 @@ nav a {
     margin: auto;
 }
 
-.card-container {
+#card-container {
     padding: 3rem 0;
     display: flex;
     justify-content: flex-start;
