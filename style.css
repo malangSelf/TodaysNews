@@ -27,7 +27,7 @@ nav a {
     padding: 1.3rem 0;
 }
 
-.input-search {
+#input-search {
     max-width: 400px;
     color: #333;
     border: none;
@@ -36,7 +36,7 @@ nav a {
     font-size: 18px;
 }
 
-.button-search {
+#button-search {
     background-color: darkgreen;
     color: white;
     padding: 10px 20px;
@@ -81,10 +81,24 @@ nav a {
     color: #333;
     font-size: 1.7rem;
     font-weight: 500;
+    width: 80%;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 这里是超出几行省略 */
+    overflow: hidden;
 }
 .card-block p {
     font-size: 1.2rem;
     padding-top: 0.7rem;
+    width: 90%;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* 这里是超出几行省略 */
+    overflow: hidden;
 }
 
 
